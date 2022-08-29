@@ -12,6 +12,7 @@ my partner is Amani al-zooubi
 
 ## Overview
 * make user requests for search about the loction and give hem the location name , latitude ,LONGITUDE and the map for this location
+and now give the user information about weathes
 
 ## Getting Started
 * the user should put the city's name that want to search about it and click in submitt button 
@@ -47,6 +48,6 @@ Estimate of time needed to complete: _____
 
 Start time: 2.00pm
 
-Finish time: 9.00pm
+Finish time: 11.00pm
 
-Actual time needed to complete: 5 hours
+Actual time needed to complete: 8 hours
