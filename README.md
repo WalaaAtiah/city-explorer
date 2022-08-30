@@ -1,7 +1,7 @@
 # CITY_EXPLORER
 
 my partner is Amani al-zooubi
-<img src="./Untitled.png" width="1500" height="300">
+<img src="./class08.png" width="1500" height="300">
 
 
 
@@ -12,10 +12,11 @@ my partner is Amani al-zooubi
 
 ## Overview
 * make user requests for search about the loction and give hem the location name , latitude ,LONGITUDE and the map for this location
-and now give the user information about weathes
+and now give the user information about weathes, move
 
 ## Getting Started
 * the user should put the city's name that want to search about it and click in submitt button 
+if he need to see the weather shoulg clice to "click here to see the weather"
 
 ## Architecture
 use :
@@ -26,6 +27,10 @@ use :
 * locationiq libray
 * app.netlify.com
 * axios library 
+* weather API 
+* heroku .com 
+* 
+
 
 
 ## Change Log

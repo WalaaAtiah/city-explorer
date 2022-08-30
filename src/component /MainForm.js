@@ -4,7 +4,8 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Ratio from 'react-bootstrap/Ratio';
 import Weather from "./Weather";
-
+import WeatherApi from "./WeatherApi";
+import Movie from "./Movie";
 
 
 class MainForm extends React.Component {
@@ -108,8 +109,10 @@ class MainForm extends React.Component {
 
      
       </div>
+ 
+      {this.state.mapFlag &&<WeatherApi  lat={this.state.lat} lon={this.state.lon} mapFlag={this.state.mapFlag} cityName={this.state.cityName} />}
+      {this.state.mapFlag &&<Movie  mapFlag={this.state.mapFlag} cityName={this.state.cityName} />}
 
-      {this.state.mapFlag &&<Weather  lat={this.state.lat} lon={this.state.lon} mapFlag={this.state.mapFlag} cityName={this.state.cityName} />}
       </>
     );
   }
