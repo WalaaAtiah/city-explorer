@@ -1,4 +1,5 @@
 import React from "react";
+import "./header.css"
 
 
 class Header extends React.Component {
@@ -6,7 +7,7 @@ class Header extends React.Component {
 
     return (
       <>
-        <h1 style={{ textAlign:"center" }}> Welcome To CITY-EXPLORER Application </h1>
+        <h1 className="headerh1"> Welcome To CITY-EXPLORER Application </h1>
       </>
     
     );

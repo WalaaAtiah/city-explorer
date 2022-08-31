@@ -1,18 +1,20 @@
 import React from "react";
 
-import Footer from "./component /Footer";
-import Header from "./component /Header";
-import Main from "./component /Main";
-import './App.css';
+import Footer from "./component /footer/Footer";
+import Header from "./component /header/Header";
+import Main from "./component /main/Main";
+import './STYLE/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 class App extends React.Component {
   render() {
 
     return (
-      <div style={{margin:"20px"}}>
+      <div className="divapp" >
         <Header/>
-        <div style={{ }}>
+        <div className="divm" >
         <Main/>
         </div>
         <Footer/>
