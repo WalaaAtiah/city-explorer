@@ -1,11 +1,12 @@
 import React from "react";
-import MainForm from "./MainForm";
+import MainForm from "../mainform/MainForm";
+import "./main.css"
 
 class Main extends React.Component {
   render() {
 
     return (
-          <div >
+          <div className="maindive">
         <MainForm/>
       </div>
     

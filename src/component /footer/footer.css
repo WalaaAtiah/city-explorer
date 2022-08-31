@@ -1,0 +1,26 @@
+/* .footer {
+    position: relative;
+    border-top: 5px solid #FFDCAE;
+    display: flex;
+    justify-content: center;
+    margin-top: 500px;
+}
+
+.background-header {
+    background-color: transparent;
+    filter:blur(15px);
+    width: 100%;
+    height: 100%;
+}
+
+.footer p {
+    z-index: 1;
+    padding-top: 20px;} */
+
+   .footerdiv{
+     display: flex;
+     gap: 20px;
+     font: 1em sans-serif;
+     margin: 50px;
+     
+}

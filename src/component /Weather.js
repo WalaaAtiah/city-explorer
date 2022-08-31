@@ -18,10 +18,10 @@ class Weather extends React.Component {
 
 
 
-weatherreq=async()=> {
-const URL=`${process.env.REACT_APP_URL}weather?lat=${this.props.lat}&lon=${this.props.lon}&name=${this.props.cityName}`
+ weatherreq=async()=> {
+ const URL=`${process.env.REACT_APP_URL}weather?lat=${this.props.lat}&lon=${this.props.lon}&name=${this.props.cityName}`
 
-try{
+ try{
   let result = await axios.get(URL);
   console.log(result)
   console.log(this.props.mapFlag)
@@ -31,7 +31,7 @@ try{
   
 
 
-this.setState({
+ this.setState({
       weather:data,
       description:data[0].description,
       datetime :data[0].datetime,
