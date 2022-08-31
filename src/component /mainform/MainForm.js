@@ -3,9 +3,8 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Ratio from "react-bootstrap/Ratio";
-import Weather from "../Weather";
 import WeatherApi from "../WeatherApi/WeatherApi";
-import Movie from "../movie/Movie";
+import Movies from "../movie/Movies";
 
 class MainForm extends React.Component {
   constructor(prop) {
@@ -15,8 +14,10 @@ class MainForm extends React.Component {
       lat: "",
       lon: "",
       error: "",
-      mapFlag: "",
+      mapFlag: false,
       cityName: "",
+      weatherflage:false,
+      flagemovie:false,
       weather: [],
       movie: [],
 
@@ -44,6 +45,7 @@ class MainForm extends React.Component {
         mapFlag: true,
         error: "",
         cityName: event.target.city.value,
+
       });
       console.log(event.target.city.value);
     } catch {
@@ -91,10 +93,13 @@ class MainForm extends React.Component {
         // do the things that dependent on the axios result
         this.setState({
           movie: result.data,
+          flagemovie:true,
         });
        } catch {
         this.setState({
           error: "Erorr :sorry something went wrong from movie! ",
+          flagemovie:false,
+
         });
       };
   };
@@ -148,10 +153,10 @@ class MainForm extends React.Component {
           )}
         </div>
           <div className="movie">
-        <WeatherApi weather={this.state.weather} />
+          {(this.state.weatherflage)&&(this.state.mapFlag) &&( <WeatherApi weather={this.state.weather} />)}
        
         
-        <Movie  movie={this.state.movie} />
+          {(this.state.flagemovie) &&(this.state.mapFlag)&&(<Movies  movie={this.state.movie} />)}
         </div>
       </>
     );
