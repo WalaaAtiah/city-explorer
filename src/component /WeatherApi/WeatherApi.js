@@ -15,7 +15,7 @@ class WeatherApi extends React.Component {
           
           {this.props.weather.map((item) => {
             return (
-              <WeatherDay datatime={item.datatime}  description={item.description}/>
+              <WeatherDay datatime={item.datatime}  description={item.description}  high_temp={item.high_temp}  low_temp={item.low_temp}/>
               
             );
           })}

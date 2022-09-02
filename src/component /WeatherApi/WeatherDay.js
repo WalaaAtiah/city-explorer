@@ -22,7 +22,9 @@ class WeatherDay extends React.Component {
             <Card.Body>
               <Card.Text>
                 <h5>datatime = {this.props.datatime}</h5>
-                <h5>description = {this.props.description}</h5>
+                <h5>description = {this.props.description} </h5>
+                <h5>high_temp={this.props.high_temp}</h5>
+                <h5>low_temp:{this.props.low_temp}</h5>
               </Card.Text>
             </Card.Body>
           </Card>

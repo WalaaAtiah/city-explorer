@@ -20,7 +20,10 @@
    .footerdiv{
      display: flex;
      gap: 20px;
-     font: 1em sans-serif;
+     font: 2em sans-serif;
      margin: 50px;
+     display: flex;
+     justify-content: center;
+       
      
 }

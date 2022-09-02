@@ -7,7 +7,7 @@ class Footer extends React.Component {
 
     return (
       <div className="footerdiv" >
-      <p >copywrite </p><a class="b" href="https://github.com/WalaaAtiah">Walaa' Atiah</a>
+      <p >Developer Name : </p><a class="b" href="https://github.com/WalaaAtiah">Walaa' Atiah</a>
       
       </div>
     
